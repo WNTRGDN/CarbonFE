@@ -1,0 +1,6 @@
+.wntrImageBlock {
+    margin-top: calc(var(--bs-gutter-x) * 2);
+    &__image {
+       width: 100%;
+    }
+}

@@ -5,8 +5,9 @@
     
     // colors
     --wntr-primary-color: rgb(5, 52, 38);
-    --wntr-secondary-color: rgba(113, 101, 88, 20);
+    --wntr-secondary-color: rgba(113, 101, 88, 0.2);
     --wntr-white-color: rgb(255, 255, 255);
+    --wntr-offwhite-color: rgb(228, 228, 228);
     --wntr-black-color: rgb(51, 51, 51);
     
     // fonts
@@ -26,11 +27,12 @@
 
 html {
     body {
+        overflow: hidden;
         padding: 30px;
         height: 100vh;
         color: var(--wntr-primary-color);
         font-family: var(--wntr-font-family);
-        font-variation-settings: var(--wntr-font-variation-setting-400);
+        font-variation-settings: var(--wntr-font-rotunda-light);
         a {
             color: var(--wntr-primary-color);
         }
@@ -38,17 +40,32 @@ html {
 }
 
 #__next {
-    height: 100vh;font-variation-settings: "wght" 100;
+    height: 100vh;
 }
 
-.fw {
-    &-bold {
-        font-variation-settings: var(--wntr-font-rotunda-medium);
-    }
-    &-normal {
-        font-variation-settings: var(--wntr-font-rotunda-light);
-    }
-    &-light {
-        font-variation-settings: var(--wntr-font-rotunda-thin);
+.fc {
+    &-primary {
+        color: var(--wntr-primary-color);
+        &:hover, &:focus {
+            color:var(--wntr-primary-color);
+        }
     }
 }
+
+.ls {
+    &-1 {
+        letter-spacing: 1px;
+    }
+    &-2 {
+        letter-spacing: 2px;
+    }
+}
+
+@import './sidebar.scss';
+@import './main.scss';
+
+@import '../blocks/jumbotron/jumbotron';
+@import '../blocks/cards/cards';
+@import '../blocks/image/image';
+@import '../blocks/text/text';
+@import '../blocks/split/split';

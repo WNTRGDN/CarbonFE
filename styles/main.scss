@@ -1,0 +1,10 @@
+main {
+    position: relative;
+    overflow-y: scroll;
+    background-color: var(--wntr-secondary-color);
+    width: 100%;
+    height: calc(100vh - 60px);
+    article:first-child {
+        margin-top: 0 !important;
+    }
+}

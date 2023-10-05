@@ -1,0 +1,24 @@
+.wntrSplitBlock {
+    margin-top: calc(var(--bs-gutter-x) * 2);
+    &__col {
+        padding: 0;
+        > article {
+            margin-top: auto !important;
+            margin-bottom: auto !important;
+        }
+    }
+    .wntrTextBlock {
+        padding: calc(var(--bs-gutter-x) * 2);
+        height: 100%;
+        background-color: var(--wntr-primary-color);
+        color: var(--wntr-white-color);
+        > .container {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        h1, h2, h3, h4, h5 {
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+    }
+}

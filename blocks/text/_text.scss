@@ -1,0 +1,9 @@
+.wntrTextBlock {
+    margin-top: calc(var(--bs-gutter-x) * 2);
+    h3 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-variation-settings: var(--wntr-font-rotunda-medium);
+        margin-bottom: calc(var(--bs-gutter-x) * 2);
+    }
+}

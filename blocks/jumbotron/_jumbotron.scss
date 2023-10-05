@@ -1,0 +1,20 @@
+.wntrJumbotronBlock {
+    background-size: 50% auto, 100% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    display: flex;
+    margin-bottom: 60px;
+    > * {
+        width: 100%;
+    }
+    h2 {
+        color: var(--wntr-white-color);
+        font-size: 60px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-variation-settings: var(--wntr-font-rotunda-medium);
+        text-shadow: 1px 1px 5px #333333;
+    }
+}
