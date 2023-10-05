@@ -1,24 +1,32 @@
+@import '../../node_modules/bootstrap/scss/variables';
+
 .wntrSplitBlock {
     margin-top: calc(var(--bs-gutter-x) * 2);
+    overflow: scroll;
     &__col {
+        background-color: var(--wntr-primary-color);
         padding: 0;
-        > article {
-            margin-top: auto !important;
-            margin-bottom: auto !important;
-        }
     }
     .wntrTextBlock {
-        padding: calc(var(--bs-gutter-x) * 2);
-        height: 100%;
-        background-color: var(--wntr-primary-color);
+        position: relative;
         color: var(--wntr-white-color);
-        > .container {
-            margin-top: auto;
-            margin-bottom: auto;
-        }
+        width: 100%;
+        padding: calc(var(--bs-gutter-x) * 2);
+        @media (min-width: map-get($grid-breakpoints, "xl")) {
+            padding: calc(var(--bs-gutter-x) * 0.5);
+            > .container {
+                position: absolute;
+                transform: translate(0%, -50%);
+                top: 50%;
+                width: 80%;
+            }
+          }
         h1, h2, h3, h4, h5 {
             letter-spacing: 2px;
             margin-bottom: 30px;
         }
+    }
+    .wntrImageBlock {
+        width: 100%;
     }
 }

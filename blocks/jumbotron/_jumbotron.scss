@@ -16,5 +16,8 @@
         text-transform: uppercase;
         font-variation-settings: var(--wntr-font-rotunda-medium);
         text-shadow: 1px 1px 5px #333333;
+        @media (max-width: map-get($grid-breakpoints, "sm")) {
+            font-size: 30px;
+        }
     }
 }

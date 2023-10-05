@@ -1,3 +1,5 @@
+@import '../../node_modules/bootstrap/scss/variables';
+
 .wntrCardsBlock {
     padding-top: var(--bs-gutter-x);
     padding-right: calc(var(--bs-gutter-x) * 0.5);
@@ -65,6 +67,9 @@
         -ms-transition: 0.6s opacity linear;
         -o-transition: 0.6s opacity linear;
         transition: 0.6s opacity linear, 0.6s -webkit-filter linear;
+        @media (max-width: map-get($grid-breakpoints, "xl")) {
+            font-size: 16px;
+        }
         span {
             display: block;
             font-size: 16px;

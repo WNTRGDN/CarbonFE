@@ -1,5 +1,8 @@
 .wntrTextBlock {
     margin-top: calc(var(--bs-gutter-x) * 2);
+    @media (max-width: map-get($grid-breakpoints, "sm")) {
+        padding: var(--bs-gutter-x);
+    }
     h3 {
         text-transform: uppercase;
         letter-spacing: 2px;
