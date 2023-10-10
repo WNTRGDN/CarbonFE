@@ -20,7 +20,7 @@ export default function Index({ website, page }: { website: IWebsite, page: IPag
         <meta property="og:title" content={(page.metaData.title ?? page.name) + ' | ' + website.name} />
         <meta property="og:description" content={page.metaData.description} />
         <meta property="og:url" content={page.url} />
-        <meta property="og:image" content={page.metaData.image} />
+        <meta property="og:image" content={`${page.metaData.image}?mode=crop&width=500&height=500`} />
         <meta name="site_name" property="og:site_name" content={website.name} />
         <meta name="fb:admins" property="fb:admins" content="100000426992446" />
         <meta name="twitter:site" content="EnvisionCarpet" />
@@ -28,10 +28,11 @@ export default function Index({ website, page }: { website: IWebsite, page: IPag
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={page.metaData.title ?? page.name + ' | ' + website.name} />
         <meta name="twitter:description" content={page.metaData.description} />
-        <meta name="twitter:image" content={page.metaData.image} />
+        <meta name="twitter:image" content={`${page.metaData.image}?mode=crop&width=500&height=500`} />
         <link rel="canonical" href={page.url}></link>
       </Head>
       <Container fluid className='h-100'>
+        <div className='sizeInd'></div>
         <Row className='h-100'>
           <Sidebar {...website} />
           <Main {...page} />

@@ -1,5 +1,6 @@
 .wntrTextBlock {
     margin-top: calc(var(--bs-gutter-x) * 2);
+    padding: var(--bs-gutter-x);
     @media (max-width: map-get($grid-breakpoints, "sm")) {
         padding: var(--bs-gutter-x);
     }

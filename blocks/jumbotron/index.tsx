@@ -4,11 +4,13 @@ import { Container, Row, Col } from 'react-bootstrap';
 const Jumbotron: FC<IJumbotron> = (jumbotron) => {
     return (
         <article className={jumbotron.alias} style={jumbotron.image.length ? { backgroundImage:`url(${jumbotron.image})` } : {}}>
-            <Container>
-                <Row>
-                    <Col dangerouslySetInnerHTML={{ __html: jumbotron.richtext }}></Col>
-                </Row>
-            </Container>
+            <div className={`${jumbotron.alias}__inner`}>
+                <Container>
+                    <Row>
+                        <Col dangerouslySetInnerHTML={{ __html: jumbotron.richtext }}></Col>
+                    </Row>
+                </Container>
+            </div>
         </article>
     )
 }

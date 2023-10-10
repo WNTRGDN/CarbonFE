@@ -16,10 +16,16 @@ const Cards: FC<ICards> = (cards) => {
                     : null }
                     {cards.items.map((item, index) =>
                         <Col xs={6} md={4} key={index}>
-                            <Link className={`${cards.alias}__card`} href={item.link}>
-                                <h3 className={`${cards.alias}__title`}>{item.title}<span>{item.text}</span></h3>
-                                <Image className={`${cards.alias}__image`} src={`${item.image}?mode=crop&width=500&height=500`} />
-                            </Link>
+                            {item.link ?
+                                <Link className={`${cards.alias}__card`} href={item.link}>
+                                    <h3 className={`${cards.alias}__title`}>{item.title}<span>{item.text}</span></h3>
+                                    <Image className={`${cards.alias}__image`} src={`${item.image}?mode=crop&width=500&height=500`} />
+                                </Link> :
+                                <div className={`${cards.alias}__card`}>
+                                    <h3 className={`${cards.alias}__title`}>{item.title}<span>{item.text}</span></h3>
+                                    <Image className={`${cards.alias}__image`} src={`${item.image}?mode=crop&width=500&height=500`} />
+                                </div>
+                            }
                         </Col>
                     )}
                 </Row>

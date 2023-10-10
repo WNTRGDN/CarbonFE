@@ -3,15 +3,27 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px;
     display: flex;
     margin-bottom: 60px;
+    &__inner {
+        padding: 50px;
+        @media (min-width: map-get($grid-breakpoints, "md")) {
+            padding: 100px;
+        }
+        background-color: var(--wntr-primary-color-alpha);
+    }
     > * {
         width: 100%;
     }
     h2 {
         color: var(--wntr-white-color);
-        font-size: 60px;
+        font-size: 40px;
+        @media (min-width: map-get($grid-breakpoints, "xl")) {
+            font-size: 50px;
+        }
+        @media (min-width: map-get($grid-breakpoints, "xxl")) {
+            font-size: 60px;
+        }
         letter-spacing: 2px;
         text-transform: uppercase;
         font-variation-settings: var(--wntr-font-rotunda-medium);
@@ -19,5 +31,18 @@
         @media (max-width: map-get($grid-breakpoints, "sm")) {
             font-size: 30px;
         }
+    }
+
+    p {
+        color: var(--wntr-white-color);
+    }
+}
+
+.page-1155 {
+    @media (min-width: map-get($grid-breakpoints, "md")) {
+        overflow: hidden !important;
+    }
+    .wntrJumbotronBlock {
+        margin-bottom: 0px;
     }
 }

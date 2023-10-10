@@ -5,6 +5,7 @@
     
     // colors
     --wntr-primary-color: rgb(5, 52, 38);
+    --wntr-primary-color-alpha: rgb(5, 52, 38, 0.8);
     --wntr-secondary-color: rgba(113, 101, 88, 0.2);
     --wntr-white-color: rgb(255, 255, 255);
     --wntr-offwhite-color: rgb(228, 228, 228);
@@ -69,3 +70,30 @@ html {
 @import '../blocks/image/image';
 @import '../blocks/text/text';
 @import '../blocks/split/split';
+@import '../blocks/teasers/teasers';
+
+.sizeInd {
+    &::after {
+        content: "xs";
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @media (min-width: map-get($grid-breakpoints, "sm")) {
+            content: "sm";
+        }
+        @media (min-width: map-get($grid-breakpoints, "md")) {
+            content: "md";
+        }
+        @media (min-width: map-get($grid-breakpoints, "lg")) {
+            content: "lg";
+        }
+        @media (min-width: map-get($grid-breakpoints, "xl")) {
+            content: "xl";
+        }
+        @media (min-width: map-get($grid-breakpoints, "xxl")) {
+            content: "xxl";
+        }
+    }
+}
