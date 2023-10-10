@@ -35,6 +35,10 @@
 
     p {
         color: var(--wntr-white-color);
+        a {
+            color: var(--wntr-white-color);
+            text-underline-offset: 5px;
+        }
     }
 }
 
@@ -44,5 +48,6 @@
     }
     .wntrJumbotronBlock {
         margin-bottom: 0px;
+        height: 100%;
     }
 }

@@ -11,8 +11,6 @@ const Sidebar: FC<IWebsite> = (sidebar) => {
     const handleClose = () => setShow(false)
     const handleShow = () => setShow(true)
 
-    console.log(sidebar)
-
     return (
         <Col xs={12} lg={3} xxl={2} as="menu">
             <Row className="d-lg-none">

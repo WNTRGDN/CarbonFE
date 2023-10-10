@@ -32,7 +32,6 @@ export default function Index({ website, page }: { website: IWebsite, page: IPag
         <link rel="canonical" href={page.url}></link>
       </Head>
       <Container fluid className='h-100'>
-        <div className='sizeInd'></div>
         <Row className='h-100'>
           <Sidebar {...website} />
           <Main {...page} />
