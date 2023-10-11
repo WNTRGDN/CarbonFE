@@ -25,8 +25,32 @@
             letter-spacing: 2px;
             margin-bottom: 30px;
         }
+        a {
+            color: var(--wntr-white-color);
+            text-decoration: none;
+        }
     }
     .wntrImageBlock {
         width: 100%;
+    }
+
+    // inverted
+    &-inverted {
+        .wntrSplitBlock {
+            &__col {
+                background-color: var(--wntr-secondary-color);
+            }
+        }
+        .wntrTextBlock {
+            color: var(--wntr-primary-color);
+            a {
+                color: var(--wntr-primary-color);
+            }
+        }
+    }
+
+    // fullScreen
+    &-fullScreen {
+        overflow-y: hidden;
     }
 }

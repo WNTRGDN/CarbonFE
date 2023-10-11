@@ -8,9 +8,15 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         font-variation-settings: var(--wntr-font-rotunda-medium);
-        margin-bottom: calc(var(--bs-gutter-x) * 2);
+        margin-bottom: var(--bs-gutter-x);
     }
     strong {
         font-variation-settings: var(--wntr-font-rotunda-medium);
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: var(--bs-gutter-x);
+        border-right: 4px solid var(--wntr-primary-color);
     }
 }
