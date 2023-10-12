@@ -9,8 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
   
   useEffect(() => {
     const handleRouteChange = (url: string) => {
-      console.log(url)
-      if (process.env.NODE_ENV === "production" && typeof window !== 'undefined') {
+      if (process.env.NODE_ENV === "production" && typeof window.gtag !== 'undefined') {
         window.gtag('config', 'G-5RTJX54Y3E', { page_path: url })
       }
     }

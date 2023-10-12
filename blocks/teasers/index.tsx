@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { Container, Row, Col, Image } from 'react-bootstrap'
 
 const Teasers: FC<ITeasers> = (teasers) => {
-    console.log(teasers.pages)
     return (
         <article className={teasers.alias}>
             <Container>
