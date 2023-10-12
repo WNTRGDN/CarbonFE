@@ -15,6 +15,13 @@ main {
     article:first-child {
         margin-top: 0 !important;
     }
+    @media (min-width: map-get($grid-breakpoints, "lg")) {
+        article:only-child {
+            &.wntrSplitBlock {
+                height: 100%
+            }
+        }
+    }
     article.wntrJumbotronBlock:last-child {
         margin-bottom: 0 !important;
     }

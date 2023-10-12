@@ -14,6 +14,7 @@ export default function Index({ website, page }: { website: IWebsite, page: IPag
         <meta name="description" content={page.metaData.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
+        <meta name="google-site-verification" content="4IefcvdWLw_tHrKPDH2gK0du0cei_wm2BoS7bxBmcqQ" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={(page.metaData.title ?? page.name) + ' | ' + website.name} />
         <meta property="og:description" content={page.metaData.description} />
