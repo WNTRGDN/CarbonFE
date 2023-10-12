@@ -28,7 +28,7 @@ export default function Index({ website, page }: { website: IWebsite, page: IPag
         <meta name="twitter:title" content={page.metaData.title ?? page.name + ' | ' + website.name} />
         <meta name="twitter:description" content={page.metaData.description} />
         <meta name="twitter:image" content={`${page.metaData.image}?mode=crop&width=500&height=500`} />
-        <meta name="environment" content={process.env.NODE_ENV} />
+        <meta name="environment" content={process.env.NEXT_PUBLIC_VERCEL_ENV} />
         <link rel="canonical" href={page.url}></link>
       </Head>
       <Script id="gtag" async src="https://www.googletagmanager.com/gtag/js?id=G-5RTJX54Y3E" />
