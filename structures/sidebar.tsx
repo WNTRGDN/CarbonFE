@@ -13,9 +13,9 @@ const Sidebar: FC<IWebsite> = (sidebar) => {
 
     return (
         <Col xs={12} lg={3} xxl={2} as="menu" className="mb-0">
-            <Row className="d-lg-none">
+            <Row className="d-lg-none my-4">
                 <Col xs={6}>
-                    <Nav.Link as={Link} key="/home" href="/" className="mb-4">
+                    <Nav.Link as={Link} key="/home" href="/">
                         <img src="../../CFE_main_logo.png" width="200" />
                     </Nav.Link>
                 </Col>
