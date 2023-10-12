@@ -4,6 +4,11 @@ main {
     background-color: var(--wntr-secondary-color);
     width: 100%;
     height: calc(100vh - 70px);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
     article:first-child {
         margin-top: 0 !important;
     }
