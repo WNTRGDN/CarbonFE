@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import Link from 'next/link'
 import { useState } from 'react'
 import { IWebsite } from 'WNTR/interfaces'
-import { Row, Col, Offcanvas, Nav, Button } from 'react-bootstrap'
+import { Row, Col, Offcanvas, Nav } from 'react-bootstrap'
 
 const Sidebar: FC<IWebsite> = (sidebar) => {
     
@@ -12,7 +12,7 @@ const Sidebar: FC<IWebsite> = (sidebar) => {
     const handleShow = () => setShow(true)
 
     return (
-        <Col xs={12} lg={3} xxl={2} as="menu">
+        <Col xs={12} lg={3} xxl={2} as="menu" className="mb-0">
             <Row className="d-lg-none">
                 <Col xs={6}>
                     <img src="../../CFE_main_logo.png" width="200" />

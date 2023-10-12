@@ -29,7 +29,9 @@
 html {
     body {
         overflow: hidden;
-        padding: 30px;
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
         height: 100vh;
         color: var(--wntr-primary-color);
         font-family: var(--wntr-font-family);
@@ -64,6 +66,7 @@ html {
 
 @import './sidebar.scss';
 @import './main.scss';
+@import './footer.scss';
 
 @import '../blocks/jumbotron/jumbotron';
 @import '../blocks/cards/cards';

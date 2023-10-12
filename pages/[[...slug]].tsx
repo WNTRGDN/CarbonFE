@@ -3,11 +3,9 @@ import { GetServerSideProps } from "next"
 import Head from 'next/head'
 import { Container, Row } from 'react-bootstrap'
 import { IWebsite, IPage } from 'WNTR/interfaces'
-import { Sidebar, Main } from 'WNTR/structures'
+import { Sidebar, Main, Footer } from 'WNTR/structures'
 
 export default function Index({ website, page }: { website: IWebsite, page: IPage }) {
-  console.log(website)
-  console.log(page)
 
   return (
     <>
@@ -35,6 +33,7 @@ export default function Index({ website, page }: { website: IWebsite, page: IPag
         <Row className='h-100'>
           <Sidebar {...website} />
           <Main {...page} />
+          <Footer {...website} />
         </Row>
       </Container>
     </>

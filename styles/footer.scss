@@ -1,0 +1,25 @@
+@import '../node_modules/bootstrap/scss/variables';
+
+footer {
+    margin-top: -13px !important;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: right;
+        justify-content: right;
+        li {
+            display: inline;
+            padding-left: calc(var(--bs-gutter-x) * 0.5);
+            &:not(:last-child){
+                padding-right: calc(var(--bs-gutter-x) * 0.5);
+                border-right: 1px solid var(--wntr-primary-color);
+            }
+            strong {
+                font-variation-settings: var(--wntr-font-rotunda-medium);
+            }
+        }
+    }
+}
