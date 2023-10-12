@@ -30,7 +30,7 @@ const Sidebar: FC<IWebsite> = (sidebar) => {
                         <img src={sidebar.settings.logo} alt="Carbon Fire Engineering" className="branding d-none d-lg-block ms-auto me-5 w-25 mt-3 mb-5" />
                         <Nav as="nav" defaultActiveKey="/home" className="flex-column">
                             {sidebar.menus[0]?.includeHome ? 
-                                <Nav.Link as={Link} key="/home" href="/" className="text-end text-uppercase pe-5 d-none d-lg-block">
+                                <Nav.Link as={Link} key="/home" href="/" className="text-end text-uppercase pe-5 d-none d-lg-block" onClick={handleClose}>
                                     <img src="/logo_title.png" className="home-logo" />
                                 </Nav.Link> : null}
                             {sidebar.menus[0]?.links.map((link, index) => <Nav.Link as={Link} key={index} href={link.url} className="text-end align-bottom fc-primary ls-1 text-uppercase pe-5">{link.title}</Nav.Link>)}
