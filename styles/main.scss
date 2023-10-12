@@ -3,7 +3,10 @@ main {
     overflow-y: scroll;
     background-color: var(--wntr-secondary-color);
     width: 100%;
-    height: calc(100vh - 70px);
+    height: calc(100% - 70px);
+    @media (min-width: map-get($grid-breakpoints, "xl")) {
+        height: calc(100vh - 70px);
+    }
     -ms-overflow-style: none;
     scrollbar-width: none;
     &::-webkit-scrollbar {
