@@ -48,6 +48,8 @@
     }
     .wntrJumbotronBlock {
         margin-bottom: 0px;
-        height: 100%;
+        @media (min-width: map-get($grid-breakpoints, "md")) {
+            height: 100%;
+        } 
     }
 }
