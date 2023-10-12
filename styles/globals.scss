@@ -43,6 +43,8 @@ html {
     }
 }
 
+::-webkit-scrollbar { display: none; }
+
 #__next {
     height: 100vh;
 }
