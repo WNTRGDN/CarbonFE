@@ -22,4 +22,7 @@ footer {
             }
         }
     }
+    @media (max-width: map-get($grid-breakpoints, "xl")) {
+        display: none;
+    }
 }

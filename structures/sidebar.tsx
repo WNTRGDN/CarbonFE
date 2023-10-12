@@ -15,7 +15,7 @@ const Sidebar: FC<IWebsite> = (sidebar) => {
         <Col xs={12} lg={3} xxl={2} as="menu" className="mb-0">
             <Row className="d-lg-none">
                 <Col xs={6}>
-                    <img src="../../CFE_main_logo.png" width="200" />
+                    <img src="../../CFE_main_logo.png" width="200" className="mb-4" />
                 </Col>
                 <Col xs={6}>
                     <p onClick={handleShow} className="text-end">MENU</p>
