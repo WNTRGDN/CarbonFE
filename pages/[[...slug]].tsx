@@ -31,8 +31,6 @@ export default function Index({ website, page }: { website: IWebsite, page: IPag
         <meta name="environment" content={process.env.NEXT_PUBLIC_VERCEL_ENV} />
         <link rel="canonical" href={page.url}></link>
       </Head>
-      <Script id="gtag" async src="https://www.googletagmanager.com/gtag/js?id=G-5RTJX54Y3E" />
-      <Script id="g-tag" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-5RTJX54Y3E', { page_path: window.location.pathname });` }} />
       <Container fluid className='h-100'>
         <Row className='h-100'>
           <Sidebar {...website} />
