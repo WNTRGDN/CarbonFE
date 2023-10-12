@@ -5,12 +5,11 @@ import type { AppProps } from 'next/app'
 
 export default function App({ Component, pageProps }: AppProps) {
 
-  const isProduction = process.env.NODE_ENV === "production"
   const router = useRouter()
   
   useEffect(() => {
     const handleRouteChange = (url: any) => {
-      if (isProduction) {
+      if (process.env.NODE_ENV === "production") {
         window.gtag('config', 'G-5RTJX54Y3E', { page_path: url })
       }
     }
