@@ -10,6 +10,13 @@ export interface IWebsite {
     updateDate: Date;
 }
 
+export interface IUrl {
+    loc: string,
+    lastmod: string,
+    changefreq: string,
+    priority: number
+}
+
 export interface ISocials {
     facebook: string;
     instagram: string;
