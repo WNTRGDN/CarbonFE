@@ -36,7 +36,7 @@ export default function Index({ website, page }: { website: IWebsite, page: IPag
         <Row className='h-100'>
           <Sidebar {...website} />
           <Main {...page} />
-          <Footer {...website} />
+          <Footer name={website.name} breadcrumbs={page.breadcrumbs} />
         </Row>
       </Container>
     </>

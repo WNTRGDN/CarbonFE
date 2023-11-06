@@ -41,6 +41,12 @@ export interface IPage {
     metaData: IMetaData;
     createDate: string;
     updateDate: string;
+    breadcrumbs: IBreadcrumb[];
+}
+
+export interface IBreadcrumb {
+    title: string,
+    url: string
 }
 
 export interface IMetaData {
