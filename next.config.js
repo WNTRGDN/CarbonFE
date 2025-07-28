@@ -2,9 +2,13 @@
 
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-eval';
-  object-src 'none';
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com;
+  style-src 'self' 'unsafe-inline' https://use.typekit.net;
+  img-src 'self' data: https://wntrau-001-site1.qtempurl.com https://www.google-analytics.com;
+  font-src 'self' https://use.typekit.net;
+  connect-src 'self' https://www.google-analytics.com;
 `;
+
 
 const nextConfig = {
     reactStrictMode: true,
