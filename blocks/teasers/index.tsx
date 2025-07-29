@@ -27,14 +27,14 @@ const Teasers: FC<ITeasers> = (teasers) => {
                                         <Link className={`${teasers.alias}__link-title`} href={item.link}>
                                             <h3 className={`${teasers.alias}__title`}>{item.title}</h3>
                                         </Link>
-                                        <div className={`${teasers.alias}__text`} dangerouslySetInnerHTML={{ __html: item.text.replace("https://wntrau-001-site1.qtempurl.com", "") }}></div>
+                                        <div className={`${teasers.alias}__text`} dangerouslySetInnerHTML={{ __html: item.text.replaceAll("https://wntrau-001-site1.qtempurl.com", "") }}></div>
                                     </Col>
                                 </Row>
                                  :
                                 <Row>
                                     <Image className={`${teasers.alias}__image`} src={`${item.image.replace("https://wntrau-001-site1.qtempurl.com", "")}?mode=crop&width=500&height=500`} />
                                     <h3 className={`${teasers.alias}__title`}>{item.title}</h3>
-                                    <div className={`${teasers.alias}__text`} dangerouslySetInnerHTML={{ __html: item.text.replace("https://wntrau-001-site1.qtempurl.com", "") }}></div>
+                                    <div className={`${teasers.alias}__text`} dangerouslySetInnerHTML={{ __html: item.text.replaceAll("https://wntrau-001-site1.qtempurl.com", "") }}></div>
                                 </Row>
                             }
                         </Col>
