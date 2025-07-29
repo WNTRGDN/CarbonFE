@@ -1,5 +1,4 @@
 import React, { FC } from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
 
 const Image: FC<IImage> = (image) => {
     return (
