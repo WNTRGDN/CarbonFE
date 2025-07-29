@@ -10,7 +10,7 @@ const Footer: FC<IFooter> = (footer) => {
               <Col className="px-0">
                 <ul className="left">
                   {footer.breadcrumbs.map(breadcrumb => 
-                    <li><Link href={breadcrumb.url}>{breadcrumb.title}</Link></li>
+                    <li key={breadcrumb.url}><Link href={breadcrumb.url}>{breadcrumb.title}</Link></li>
                   )}
                 </ul>
               </Col>
