@@ -19,11 +19,11 @@ const Cards: FC<ICards> = (cards) => {
                             {item.link ?
                                 <Link className={`${cards.alias}__card`} href={item.link}>
                                     <h3 className={`${cards.alias}__title`}>{item.title}<span>{item.text}</span></h3>
-                                    <Image className={`${cards.alias}__image`} src={`${item.image}?mode=crop&width=500&height=500`} />
+                                    <Image className={`${cards.alias}__image`} src={`${item.image.replace("https://wntrau-001-site1.qtempurl.com", "")}?mode=crop&width=500&height=500`} />
                                 </Link> :
                                 <div className={`${cards.alias}__card`}>
                                     <h3 className={`${cards.alias}__title`}>{item.title}<span>{item.text}</span></h3>
-                                    <Image className={`${cards.alias}__image`} src={`${item.image}?mode=crop&width=500&height=500`} />
+                                    <Image className={`${cards.alias}__image`} src={`${item.image.replace("https://wntrau-001-site1.qtempurl.com", "")}?mode=crop&width=500&height=500`} />
                                 </div>
                             }
                         </Col>
