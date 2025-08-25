@@ -6,7 +6,7 @@ const Text: FC<IText> = (text) => {
         <article className={text.alias}>
             <Container>
                 <Row>
-                    <Col className={`${text.alias}__col`} dangerouslySetInnerHTML={{ __html: text.richtext.replaceAll("https://wntrau-001-site1.qtempurl.com", "") }}>
+                    <Col className={`${text.alias}__col`} dangerouslySetInnerHTML={{ __html: text.richtext.replaceAll("https://wintrau-001-site1.qtempurl.com", "") }}>
                     </Col>
                 </Row>
             </Container>
