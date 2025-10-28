@@ -25,11 +25,11 @@ const Sidebar: FC<IWebsite> = (sidebar) => {
             </Row>
             <Offcanvas show={show} onHide={handleClose} responsive="lg" className="w-xs-50 w-lg-100">
                 <Offcanvas.Header closeButton>
-                    <img src={sidebar.settings.logo.replace("https://wintrau-001-site1.qtempurl.com", "")} alt="Carbon Fire Engineering" className="w-25 d-block mx-auto" />
+                    <img src={sidebar.settings.logo.replace("https://wntrau-001-site1.qtempurl.com", "")} alt="Carbon Fire Engineering" className="w-25 d-block mx-auto" />
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                     <div className="w-100 h-100">
-                        <img src={sidebar.settings.logo.replace("https://wintrau-001-site1.qtempurl.com", "")} alt="Carbon Fire Engineering" className="branding d-none d-lg-block ms-auto me-5 w-25 mt-3 mb-5" />
+                        <img src={sidebar.settings.logo.replace("https://wntrau-001-site1.qtempurl.com", "")} alt="Carbon Fire Engineering" className="branding d-none d-lg-block ms-auto me-5 w-25 mt-3 mb-5" />
                         <Nav as="nav" defaultActiveKey="/home" className="flex-column">
                             {sidebar.menus[0]?.includeHome ? 
                                 <Nav.Link as={Link} key="/home" href="/" className="text-end text-uppercase pe-5 d-none d-lg-block">
